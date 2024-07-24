@@ -20,14 +20,19 @@
   display: none;
   animation-name: drop;
   animation-duration: 2s;
+  transform-origin: top;
 }
 @keyframes drop {
   0% {
-    max-height: 0;
+    transform: scaleY(0);
+  }
+
+  50% {
+    transform: scaleY(1.2)
   }
 
   100% {
-    max-height: 100vh;
+    transform: scaleY(1)
   }
 }
 
